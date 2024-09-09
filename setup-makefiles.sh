@@ -60,7 +60,7 @@ v20-common)
 ;;
 esac
 
-write_makefiles "$MY_DIR/../$DEVICE_COMMON/proprietary-files.txt" true
+write_makefiles "$MY_DIR/../$DEVICE_COMMON/proprietary-files.txt"
 
 # We are done with common
 write_footers
@@ -72,7 +72,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$ANDROID_ROOT"
 write_headers
 
 # Device specific blobs
-write_makefiles "$MY_DIR/../$DEVICE/proprietary-files.txt" true
+write_makefiles "$MY_DIR/../$DEVICE/proprietary-files.txt"
 
 # We are done with device
 write_footers
